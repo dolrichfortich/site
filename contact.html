@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolrich Fortich - Contact</title>
+    <base href="/">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__button">
+          <a href="javascript:void(0);" class="icon" onclick="handleNav()">
+            <img id="ham-icon" src="asset/icons/menu.svg" alt="hamburger" width="20" height="20" />
+          </a>
+        </div>
+        <div class="container">
+          <ul class="navigation" id="mynavigation">
+            <li class="navigation__item">
+              <a class='navigation__link' href='/'>Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class='navigation__link active' href='contact.html'>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSecNyFOM39OGXx0o6q273wyk_LhXWaKz8L1n1nhM3wru0qYhQ/viewform?embedded=true" class="contact__form" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="icons__container">
+          <img src="asset/icons/linkedin.svg" alt="Linkedin" />
+        </div>
+        Copyright &copy;2025 All rights reserved
+      </div>
+    </footer>
+    <script>
+      function handleNav() {
+        var x = document.getElementById("mynavigation");
+        var hamIcon = document.getElementById("ham-icon");
+
+        if (x.className === "navigation") {
+          x.className += " show";
+          hamIcon.src = "asset/icons/close.png";
+          hamIcon.alt = "close";
+        } else {
+          x.className = "navigation";
+          hamIcon.src = "asset/icons/menu.svg";
+          hamIcon.alt = "hamburger";
+        }
+      }
+    </script>
+  </body>
+</html>

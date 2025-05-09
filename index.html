@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolrich Fortich - Freelance web developer</title>
+    <base href="/">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__button">
+          <a href="javascript:void(0);" class="icon" onclick="handleNav()">
+            <img id="ham-icon" src="asset/icons/menu.svg" alt="hamburger" width="20" height="20" />
+          </a>
+        </div>
+        <div class="container">
+          <ul class="navigation" id="mynavigation">
+            <li class="navigation__item">
+              <a class='navigation__link active' href='/'>Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class='navigation__link' href='contact.html'>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="hero">
+        <div class="hero__container">
+          <div class="hero__text__container">
+            <h1 class="hero__title">
+              Hi, I am Dolrich,
+              <br />
+              Freelance Web Developer
+            </h1>
+            <div class="hero__mobile_image">
+              <img src="asset/images/profile-r.png" alt="profile" />
+            </div>
+            <p class="hero__desc">
+              I am a full stack web developer. I mostly develop wordpress plugins, ecommerce websites built with woocommerce
+              and anything backend or frontend development. I can also develop sites with Laravel.
+            </p>
+            <p class="hero__cta">
+              <a class="btn btn--primary mt-2" href="contact.html">Contact me here</a>
+            </p>
+          </div>
+          <div class="hero__image__container">
+            <img src="asset/images/profile-r.png" alt="profile" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="icons__container">
+          <a href="https://www.linkedin.com/in/dolrichfortich/"><img src="asset/icons/linkedin.svg" alt="Linkedin" /></a>
+        </div>
+        Copyright &copy;2025 All rights reserved
+      </div>
+    </footer>
+    <script>
+      function handleNav() {
+        var x = document.getElementById("mynavigation");
+        var hamIcon = document.getElementById("ham-icon");
+
+        if (x.className === "navigation") {
+          x.className += " show";
+          hamIcon.src = "asset/icons/close.png";
+          hamIcon.alt = "close";
+        } else {
+          x.className = "navigation";
+          hamIcon.src = "asset/icons/menu.svg";
+          hamIcon.alt = "hamburger";
+        }
+      }
+    </script>
+  </body>
+</html>
