@@ -1,0 +1,19 @@
+{
+  "name": "dolrichfortich",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss src/style.scss asset/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.11",
+    "sass": "^1.97.2"
+  }
+}

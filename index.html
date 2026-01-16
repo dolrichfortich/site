@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="asset/css/style.css?v=1.01" />
   </head>
   <body>
     <header>
@@ -24,34 +24,95 @@
               <a class='navigation__link active' href='/'>Home</a>
             </li>
             <li class="navigation__item">
-              <a class='navigation__link' href='contact.html'>Contact</a>
+              <a class='navigation__link' href='contact'>Contact</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <div class="container">
-      <div class="hero">
-        <div class="hero__container">
-          <div class="hero__text__container">
-            <h1 class="hero__title">
-              Hi, I am Dolrich,
-              <br />
-              Freelance Web Developer
-            </h1>
-            <div class="hero__mobile_image">
+    <div class="mb-3">
+      <div class="container">
+        <div class="hero">
+          <div class="hero__container">
+            <div class="hero__text__container">
+              <h1 class="hero__title">
+                Hi, I am Dolrich,
+                <br />
+                Freelance Web Developer
+              </h1>
+              <div class="hero__mobile_image">
+                <img src="asset/images/profile-r.png" alt="profile" />
+              </div>
+              <p class="hero__desc">
+                I am a full stack web developer. I mostly develop wordpress plugins, ecommerce websites built with woocommerce
+                and anything backend or frontend development. I can also develop sites with Laravel.
+              </p>
+              <p class="hero__cta">
+                <a class="btn btn--primary mt-2" href="contact">Contact me here</a>
+              </p>
+            </div>
+            <div class="hero__image__container">
               <img src="asset/images/profile-r.png" alt="profile" />
             </div>
-            <p class="hero__desc">
-              I am a full stack web developer. I mostly develop wordpress plugins, ecommerce websites built with woocommerce
-              and anything backend or frontend development. I can also develop sites with Laravel.
-            </p>
-            <p class="hero__cta">
-              <a class="btn btn--primary mt-2" href="contact.html">Contact me here</a>
-            </p>
           </div>
-          <div class="hero__image__container">
-            <img src="asset/images/profile-r.png" alt="profile" />
+        </div>
+      </div>
+    </div>
+    <div class="block-works mb-3 block-even">
+      <div class="container">
+        <div class="block-works__header">
+          <div>
+            <h3 class="block-works__header__title">Featured works</h3>
+          </div>
+          <!--
+          <div>
+            <a href="portfolio">View All</a>
+          </div>
+          -->
+        </div>
+        <div class="block-works__container">
+          <div class="block-works__card">
+            <div class="block-works__image-wrapper">
+              <img src="asset/images/work/lcsp.png" alt="Low Cost Spacovers" />
+            </div>
+            <div>
+              <h4 class="block-works__card__title">Low Cost Spacovers</h4>
+              <div class="block-works__card__tags">
+                <span>wordpress, woocommerce</span>
+              </div>
+              <p>Engineered a custom end-to-end product configuration and manufacturing ecosystem integrated with WooCommerce.
+              Developed a production management system that synchronized manufacturing workflows with a employee payroll, automating salary calculations based on component assembly.
+              Streamlined logistics by integrating multiple USA based shipping carriers.
+              </p>
+            </div>
+          </div>
+          <div class="block-works__card">
+            <div class="block-works__image-wrapper">
+              <img src="asset/images/work/brc.png" alt="Bike Rack Calculator" />
+            </div>
+            <div>
+              <h4 class="block-works__card__title">Bike Rack Calculator</h4>
+              <div class="block-works__card__tags">
+                <span>wordpress, calculator tool</span>
+              </div>
+              <p>Developed an intelligent spatial calculation engine that automatically determines optimal bike rack density based on room dimensions.
+              Integrated this logic with Gravity Forms to capture lead data and developed a dynamic PDF generation system to instantly provide clients with customized technical layouts and quotes.
+              </p>
+            </div>
+          </div>
+          <div class="block-works__card">
+            <div class="block-works__image-wrapper">
+              <img src="asset/images/work/bngbx.png" alt="Bungobox" />
+            </div>
+            <div>
+              <h4 class="block-works__card__title">Bungobox</h4>
+              <div class="block-works__card__tags">
+                <span>ExpressionEngine, PHP, MySQL, jQuery</span>
+              </div>
+              <p>The work involves development of all business process for renting of boxes.
+              Front-end ordering, backend processing of orders, accounts, franchise handling.
+              </p>
+            </div>
           </div>
         </div>
       </div>
