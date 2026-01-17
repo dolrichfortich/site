@@ -237,7 +237,8 @@ footer {
 .hero {
   margin-top: 140px;
   font-size: 1rem;
-  color: #21243d; }
+  color: #21243d;
+  padding-bottom: 40px; }
   .hero__container {
     display: flex;
     flex-direction: row;
@@ -352,8 +353,9 @@ footer {
   justify-content: space-between; }
   .block-works__header__title {
     font-weight: 500;
-    font-size: 22px;
-    color: #21243d; }
+    font-size: 36px;
+    color: #21243d;
+    text-transform: uppercase; }
     @media (max-width: 1199.98px) {
       .block-works__header__title {
         font-size: 1.5rem; } }
@@ -374,7 +376,10 @@ footer {
   font-weight: 400; }
   .block-works__card img {
     max-width: 246px;
-    border-radius: 8px; }
+    border-radius: 8px;
+    transition: all 0.8s; }
+    .block-works__card img:hover {
+      transform: scale(1.1); }
     @media (max-width: 1199.98px) {
       .block-works__card img {
         max-width: 492px; } }
@@ -404,3 +409,40 @@ footer {
 
 .block-works.block-even .block-works__card {
   padding-left: 1.25rem; }
+
+.block-testimonials__header__title {
+  font-weight: 500;
+  font-size: 36px;
+  color: #21243d;
+  text-transform: uppercase; }
+
+.block-testimonials__card {
+  padding: 40px 30px;
+  border-radius: 6px;
+  background-color: #EDF7FA; }
+  .block-testimonials__card:hover {
+    background-color: #EDF1FA; }
+  .block-testimonials__card-header {
+    display: flex;
+    margin-bottom: 20px; }
+    .block-testimonials__card-header img {
+      width: 75px !important;
+      height: 75px !important;
+      margin-right: 25px; }
+    .block-testimonials__card-header__title {
+      margin-bottom: 0; }
+    .block-testimonials__card-header__description {
+      font-family: "Jost", sans-serif;
+      margin-bottom: 0; }
+  .block-testimonials__card-description {
+    font-family: "Jost", sans-serif; }
+  .block-testimonials__card-image-custom {
+    background-color: #D9D9D9;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 75px;
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    margin-right: 25px;
+    border-radius: 39px; }

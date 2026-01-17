@@ -7,14 +7,16 @@
     <base href="/">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Jost:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="asset/css/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="asset/css/owl-carousel/owl.theme.default.min.css" />
     <link rel="stylesheet" href="asset/css/style.css?v=1.01" />
   </head>
   <body>
     <header>
       <nav>
         <div class="nav__button">
-          <a href="javascript:void(0);" class="icon" onclick="handleNav()">
+          <a href="javascript:void(0);" class="icon" onclick="app.handleNav()">
             <img id="ham-icon" src="asset/icons/menu.svg" alt="hamburger" width="20" height="20" />
           </a>
         </div>
@@ -43,7 +45,7 @@
               <div class="hero__mobile_image">
                 <img src="asset/images/profile-r.png" alt="profile" />
               </div>
-              <p class="hero__desc">
+              <p class="hero__desc mb-4">
                 I am a full stack web developer. I mostly develop wordpress plugins, ecommerce websites built with woocommerce
                 and anything backend or frontend development. I can also develop sites with Laravel.
               </p>
@@ -60,7 +62,7 @@
     </div>
     <div class="block-works mb-3 block-even">
       <div class="container">
-        <div class="block-works__header">
+        <div class="block-works__header mt-4">
           <div>
             <h3 class="block-works__header__title">Featured works</h3>
           </div>
@@ -117,6 +119,120 @@
         </div>
       </div>
     </div>
+    <div class="block-testimonials">
+      <div class="container">
+        <div class="block-testimonials__header mt-4">
+          <div>
+            <h3 class="block-testimonials__header__title">Client Feedback</h3>
+          </div>
+        </div>
+        <div class="block-testimonials__container">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="block-testimonials__card">
+                <div class="block-testimonials__card-header">
+                  <img src="asset/images/testimonial/c1.png" alt="Client" />
+                  <div>
+                    <h3 class="block-testimonials__card-header__title">Paula Glynn</h3>
+                    <p class="block-testimonials__card-header__description">Director of Search Marketing & Digital Strategy, Pixelstorm</p>
+                  </div>
+                </div>
+                <div class="block-testimonials__card-description">
+                  <p>&#8220;Outstanding. One of the best developers I've ever worked with.&#8221;</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="block-testimonials__card">
+                <div class="block-testimonials__card-header">
+                  <div class="block-testimonials__card-image-custom">DI</div>
+                  <div>
+                    <h3 class="block-testimonials__card-header__title">Daniel Ibsn</h3>
+                    <p class="block-testimonials__card-header__description">Quokka Beds</p>
+                  </div>
+                </div>
+                <div class="block-testimonials__card-description">
+                  <p>&#8220;Dolrich is a very creative and smart freelancer, taking on several fairly complex tasks and coming up with a nice solution every time.&#8221;</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="block-testimonials__card">
+                <div class="block-testimonials__card-header">
+                  <div class="block-testimonials__card-image-custom">UU</div>
+                  <div>
+                    <h3 class="block-testimonials__card-header__title">Udara U</h3>
+                    <p class="block-testimonials__card-header__description">Wristband Monkey</p>
+                  </div>
+                </div>
+                <div class="block-testimonials__card-description">
+                  <p>&#8220;if you need the job done with clean code and without any technical bugs and glitches, Dolrich is the guy.
+                  I wanted to do some complex Woocommerce product page customisations and this guy was the only person who was able to do it successfully,
+                  not forgetting I went through 4 other 'experts' and wasted over 3 weeks and my valuable time and chatting on skype. 
+                  Im a coder myself and I know what a perfect job is. Don't waste time shopping around for a mid range guy,
+                  hire Dolrich and he'll do the job properly so you can focus on the overall project rather than nitty-gritty bugs and poor communications.&#8221;</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="block-testimonials__card">
+                <div class="block-testimonials__card-header">
+                  <div class="block-testimonials__card-image-custom">DVD</div>
+                  <div>
+                    <h3 class="block-testimonials__card-header__title">Derek Van Derven</h3>
+                    <p class="block-testimonials__card-header__description">derekvanderven.com</p>
+                  </div>
+                </div>
+                <div class="block-testimonials__card-description">
+                  <p>&#8220;Dolrich is the most talented programmer I have ever hired. He is responsible,
+                  patient, hard working and gets the job done perfectly and quickly. I would highly
+                  recommend him above any programmer I have ever seen on odesk.com or any other php freelancing site.
+                  Since Dolrich truly loves what he does, I predict that he will become one of
+                  the best programmers on the net for hire.<br />
+                  Thanks Dolrich for all of your help, time and patience.&#8221;</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="block-testimonials__card">
+                <div class="block-testimonials__card-header">
+                  <div class="block-testimonials__card-image-custom">BR</div>
+                  <div>
+                    <h3 class="block-testimonials__card-header__title">Bill Rollens</h3>
+                    <p class="block-testimonials__card-header__description">codegrinders.net</p>
+                  </div>
+                </div>
+                <div class="block-testimonials__card-description">
+                  <p>&#8220;Amazing Job, very fast, had project complete in 2 days. Very high quality programmer,
+                  detail oriented, and is a true expert at PHP and MYSQL.&#8221;</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="block-testimonials__card">
+                <div class="block-testimonials__card-header">
+                  <div class="block-testimonials__card-image-custom">RS</div>
+                  <div>
+                    <h3 class="block-testimonials__card-header__title">Rob Snowden</h3>
+                    <p class="block-testimonials__card-header__description">homeprintstudio.com</p>
+                  </div>
+                </div>
+                <div class="block-testimonials__card-description">
+                  <p>&#8220;Dolrich made an awesome job here. Its a multiseller platform, where users register and can
+                  start selling their own products, buy another users products, ask questions to other sellers and answer
+                  questions from other buyers, and you get complete control over this actions from admin. Also, the admin
+                  privileges are not modified, so you get a list of each client that is registered in the page, in dashboard
+                  you see all the transactions made in the page by each user, you can delete users, delete users products,
+                  edit them, and many more things. Its like and ebay platform but set in opencart and gives control to
+                  opencarts store admin to do whatever they need.
+                  I highly recommend it, and Dolrich works very well and fast!&#8221;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="container">
         <div class="icons__container">
@@ -125,21 +241,9 @@
         Copyright &copy;2025 All rights reserved
       </div>
     </footer>
-    <script>
-      function handleNav() {
-        var x = document.getElementById("mynavigation");
-        var hamIcon = document.getElementById("ham-icon");
-
-        if (x.className === "navigation") {
-          x.className += " show";
-          hamIcon.src = "asset/icons/close.png";
-          hamIcon.alt = "close";
-        } else {
-          x.className = "navigation";
-          hamIcon.src = "asset/icons/menu.svg";
-          hamIcon.alt = "hamburger";
-        }
-      }
-    </script>
+    <script src="asset/js/jquery-3.7.1.min.js"></script>
+    <script src="asset/js/owl.carousel.min.js"></script>
+    <script src="asset/js/app.js"></script>
+    <script src="asset/js/page.home.js"></script>
   </body>
 </html>
