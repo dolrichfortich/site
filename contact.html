@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dolrich Fortich - Contact</title>
+    <title>Contact - Dolrich Fortich</title>
     <base href="/">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="asset/css/style.css?v=1.01" />
   </head>
   <body>
     <header>
@@ -22,6 +22,9 @@
           <ul class="navigation" id="mynavigation">
             <li class="navigation__item">
               <a class='navigation__link' href='/'>Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="work">Work</a>
             </li>
             <li class="navigation__item">
               <a class='navigation__link active' href='contact'>Contact</a>
@@ -40,24 +43,11 @@
         <div class="icons__container">
           <img src="asset/icons/linkedin.svg" alt="Linkedin" />
         </div>
-        Copyright &copy;2025 All rights reserved
+        Copyright &copy;2026 All rights reserved
       </div>
     </footer>
-    <script>
-      function handleNav() {
-        var x = document.getElementById("mynavigation");
-        var hamIcon = document.getElementById("ham-icon");
-
-        if (x.className === "navigation") {
-          x.className += " show";
-          hamIcon.src = "asset/icons/close.png";
-          hamIcon.alt = "close";
-        } else {
-          x.className = "navigation";
-          hamIcon.src = "asset/icons/menu.svg";
-          hamIcon.alt = "hamburger";
-        }
-      }
-    </script>
+    <script src="asset/js/jquery-3.7.1.min.js"></script>
+    <script src="asset/js/owl.carousel.min.js"></script>
+    <script src="asset/js/app.js"></script>
   </body>
 </html>
